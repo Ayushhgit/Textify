@@ -1,0 +1,21 @@
+@import "tailwindcss";
+* {
+    font-family: 'Opne Sans', sans-serif;
+}
+
+h1,h2,h3, .bold {
+    font-family: 'poppins', sans-serif;
+}
+
+.specialBtn {
+    background: white;
+    box-shadow: 0px 14px 55px rgba(250, 149, 255, 0.35);
+    transition-duration: 200ms;
+}
+
+.specialBtn:hover {
+    opacity: 0.8;
+    background: #faf0fc;
+    box-shadow: 0px 14px 55px rgba(209, 142, 212, 0.35);
+    transform: translateY(-1.8px);
+}
