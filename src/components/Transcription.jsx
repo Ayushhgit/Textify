@@ -8,7 +8,7 @@ function Transcription(props) {
     <div>
         {
             text ? (
-                <p >{text}</p>
+                <p>{text}</p>
             ) : (
                 <p>No Transcription Available</p>
             )

@@ -3,7 +3,7 @@ import { MessageTypes } from './presets';
 
 class MyTranscriptionPipeline {
     static task = 'automatic-speech-recognition';
-    static model = 'Xenova/whisper-tiny';
+    static model = 'Xenova/whisper-tiny.en';
     static instance = null;
     static loading = false;
     static progressCallback = null;
