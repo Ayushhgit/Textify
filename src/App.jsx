@@ -6,7 +6,7 @@ import Transcribing from './components/Transcribing.jsx';
 import { MessageTypes } from './utils/presets.js';
 import Footer from './components/Footer.jsx';
 import Information from './components/Information.jsx';
-
+// 
 function App() {
   const [file, setFile] = useState(null);
   const [audioStream, setAudioStream] = useState(null);
