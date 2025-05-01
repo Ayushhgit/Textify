@@ -7,7 +7,7 @@
 [![Xenova](https://img.shields.io/badge/Xenova-whisper--tiny.en-purple?style=flat&logoSize=auto&labelColor=white)](https://www.npmjs.com/package/@xenova/transformers)
 [![Xenova](https://img.shields.io/badge/Xenova-nllb--200--distilled--600M-wheat?style=flat&logoSize=auto&labelColor=white)](https://www.npmjs.com/package/@xenova/transformers)
 
-Deployed: [Free-Scribe](https://ayushhgit.githun.io/Textify)
+Deployed: [Textify](https://ayushhgit.github.io/Textify)
 
 ## Audio Transcription and Translation App
 
