@@ -1,13 +1,13 @@
 
 
-# **Free-Scribe** 🎤➡️📜➡️🌐
+# **Textify** 🎤➡️📜➡️🌐
 
 [![React](https://img.shields.io/badge/React-18.2.0-whitesmoke?style=flat&logo=react&logoColor=white&logoSize=auto&labelColor=blue)](https://react.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.x-blue?style=flat&logo=tailwindcss&logoColor=blue&logoSize=auto&labelColor=black)](https://tailwindcss.com/)
 [![Xenova](https://img.shields.io/badge/Xenova-whisper--tiny.en-purple?style=flat&logoSize=auto&labelColor=white)](https://www.npmjs.com/package/@xenova/transformers)
 [![Xenova](https://img.shields.io/badge/Xenova-nllb--200--distilled--600M-wheat?style=flat&logoSize=auto&labelColor=white)](https://www.npmjs.com/package/@xenova/transformers)
 
-Deployed: [Free-Scribe](https://atpritam.github.io/Free-Scribe/)
+Deployed: [Free-Scribe](https://ayushhgit.githun.io/Textify)
 
 ## Audio Transcription and Translation App
 
@@ -31,7 +31,7 @@ Deployed: [Free-Scribe](https://atpritam.github.io/Free-Scribe/)
 
 ## **Introduction**
 
-**Free-Scribe** is a powerful web application built with **React.js** that leverages machine learning models for audio transcription and translation. It provides an intuitive and seamless user experience for recording, transcribing, and translating audio content. Ideal for content creators, journalists, and anyone in need of transcription and translation services.
+**Textify** is a powerful web application built with **React.js** that leverages machine learning models for audio transcription and translation. It provides an intuitive and seamless user experience for recording, transcribing, and translating audio content. Ideal for content creators, journalists, and anyone in need of transcription and translation services.
 
 ---
 
