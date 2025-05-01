@@ -1,16 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-export default function Header() {
+const Header = (props) => {
+    const { handleNew } = props;
+
     return (
         <header className='flex items-center justify-between gap-4 p-4'>
-            <a href="/"><h1 className='font-medium'>Text<span className='text-purple-400 bold'>ify</span></h1></a>
-            <div className='gap-4 flex items-center '>
-                <a href="https://youtube.com" target='_blank' className='text-slate-600 cursor-pointer' rel="noreferrer">Donate</a>
-                <a href="/" className='flex items-center gap-2 specialBtn px-3 py-2 rounded-lg text-purple-400'>
+            <a href="/Free-Scribe/">
+                <h1 className='font-large font-bold'>
+                    Text<span className='text-purple-400 font-bold'>ify</span>
+                </h1>
+            </a>
+            <div className='flex items-center gap-4'>
+                
+                <a 
+                    href="/Free-Scribe/"
+                    className={`specialBtn flex items-center gap-2 px-3 py-2 rounded-lg text-purple-400 cursor-pointer transition-opacity duration-300`}
+                >
                     <p>New</p>
-                    <i className="fa-solid fa-plus"></i>
+                    <i className="fa-solid fa-box"></i>
                 </a>
             </div>
         </header>
-    )
+    );
 }
+
+export default Header;

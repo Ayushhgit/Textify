@@ -1,21 +1,127 @@
-@import "tailwindcss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Font Defaults */
 * {
-    font-family: 'Opne Sans', sans-serif;
+  font-family: 'Open-Sans', sans-serif;
 }
 
-h1,h2,h3, .bold {
-    font-family: 'poppins', sans-serif;
+body {
+  min-height: 100vh;
+  background-image: 
+    linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(236, 221, 255, 0.8)),
+    url('src\assets\bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
+h1, h2, h3, h4, .bold {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Special Button */
 .specialBtn {
-    background: white;
-    box-shadow: 0px 14px 55px rgba(250, 149, 255, 0.35);
-    transition-duration: 200ms;
+  background-color: white;
+  box-shadow: 0 14px 55px rgba(189, 104, 241, 0.35);
+  transition: all 300ms ease-in-out;
+  border: 2px solid transparent;
 }
 
 .specialBtn:hover {
+  transform: scale(1.05);
+  border-color: #bd68f1;
+  background-color: #f9f4ff;
+  box-shadow: 0 8px 30px rgba(189, 104, 241, 0.5);
+}
+
+.specialBtn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(189, 104, 241, 0.4);
+}
+
+
+.specialBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 20px rgba(189, 104, 241, 0.5);
+}
+
+/* Enhanced Loading Bar Animation */
+.bounce-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bounce-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bd68f1;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.bounce-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bounce-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
     opacity: 0.8;
-    background: #faf0fc;
-    box-shadow: 0px 14px 55px rgba(209, 142, 212, 0.35);
-    transform: translateY(-1.8px);
+  }
+  40% {
+    transform: translateY(-12px);
+    opacity: 1;
+  }
+}
+
+/* Fixed-height Container */
+.fixed-height-container {
+  height: 45vh;
+  overflow-y: fixed;
+  width: 40vw;
+  min-width: 370px;
+  box-sizing: border-box;
+  padding: 26px;
+  align-self: center;
+}
+
+.fixed-height {
+  height: 80%;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Typewriter Effect (Looping) */
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  border-right: 0.15em solid #e2d9ea;
+  animation: typing 3s steps(40, end) forwards, fadeLoop 6s infinite;
+  width: 0;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes fadeLoop {
+  0%, 100% { opacity: 0; width: 0; }
+  25%, 75% { opacity: 1; width: 100%; }
+  50% { opacity: 0.6; }
 }
